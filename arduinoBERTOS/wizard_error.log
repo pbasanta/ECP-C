@@ -1,0 +1,19 @@
+Traceback (most recent call last):
+
+  File "/home/pbasanta/bertos-2.7.0/wizard/BProjectPresets.py", line 149, in nextId
+    suitable_toolchains = tm.suitableToolchains(target)
+
+  File "/home/pbasanta/bertos-2.7.0/wizard/toolchain_manager.py", line 126, in suitableToolchains
+    toolchains = self.toolchains
+
+  File "/home/pbasanta/bertos-2.7.0/wizard/toolchain_manager.py", line 103, in toolchains
+    information = self._validateToolchain(toolchain)
+
+  File "/home/pbasanta/bertos-2.7.0/wizard/toolchain_manager.py", line 74, in _validateToolchain
+    return validateToolchain(toolchain)
+
+  File "/home/pbasanta/bertos-2.7.0/wizard/toolchain_validation.py", line 55, in validateToolchain
+    description = unicode(validation_process.readAllStandardError())
+
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xc3 in position 935: ordinal not in range(128)
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
